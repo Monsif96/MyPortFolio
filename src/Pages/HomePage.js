@@ -1,6 +1,10 @@
 import React from 'react';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 
 function HomePage() {
     return(
@@ -15,7 +19,15 @@ function HomePage() {
                     I have a Bachelor of Technology degree from the Indian Institute of Technology (IIT) Guwahati.
                 </p>
                 <div className="icons">
-                    <FontAwesomeIcon icon={faFacebook}/>
+                    <Link className="icon-holder">
+                        <FontAwesomeIcon icon={faFacebook} className="icon"/>
+                    </Link>
+                    <Link className="icon-holder">
+                        <FontAwesomeIcon icon={faGithub} className="icon"/>
+                    </Link>
+                    <Link className="icon-holder">
+                        <FontAwesomeIcon icon={faYoutube} className="icon"/>
+                    </Link>
                 </div>
             </header>
         </div>
