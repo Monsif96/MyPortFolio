@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 function HomePage() {
@@ -20,13 +20,13 @@ function HomePage() {
                 </p>
                 <div className="icons">
                     <Link className="icon-holder">
-                        <FontAwesomeIcon icon={faFacebook} className="icon"/>
+                        <FontAwesomeIcon icon={faFacebook} className="icon fb"/>
                     </Link>
                     <Link className="icon-holder">
-                        <FontAwesomeIcon icon={faGithub} className="icon"/>
+                        <FontAwesomeIcon icon={faGithub} className="icon git"/>
                     </Link>
                     <Link className="icon-holder">
-                        <FontAwesomeIcon icon={faYoutube} className="icon"/>
+                        <FontAwesomeIcon icon={faLinkedin} className="icon ld"/>
                     </Link>
                 </div>
             </header>
