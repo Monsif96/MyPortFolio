@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import photo from '../img/photo.png';
+import photo from '../img/Elghazaoui_Monsif.jpg';
 
 function NavBar(props) {
     return (
@@ -20,7 +20,7 @@ function NavBar(props) {
                             About
                         </NavLink>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <NavLink to="/portfolios" exact activeClassName="active" >
                             Portfolios
                         </NavLink>
@@ -29,7 +29,7 @@ function NavBar(props) {
                         <NavLink to="/blogs" exact activeClassName="active" >
                             Blogs
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                         <NavLink to="/contact" exact activeClassName="active" >
                             Contact

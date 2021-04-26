@@ -6,12 +6,23 @@ import PortfoliosPage from './Pages/PortfoliosPage';
 import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
 import { Switch, Route } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false);
+
+  const navClick = () => {
+    setNavToggle(!navToggle);
+  }
   return (
     <div className="App">
-      <div className="sidebar">
+      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
         <NavBar />
+      </div>
+      <div className="nav-btn" onClick={navClick}>
+        <div className="line-1"></div>
+        <div className="line-2"></div>
+        <div className="line-3"></div>
       </div>
       <div className="main-content">
         <div className="content">
@@ -22,12 +33,12 @@ function App() {
             <Route path="/about" exact>
               <AboutPage />
             </Route>
-            <Route path="/Portfolios" exact>
+            {/* <Route path="/Portfolios" exact>
               <PortfoliosPage />
             </Route>
             <Route path="/blogs" exact>
               <BlogsPage />
-            </Route>
+            </Route> */}
             <Route path="/contact" exact>
               <ContactPage />
             </Route>
@@ -38,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
