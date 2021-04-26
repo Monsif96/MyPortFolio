@@ -5,7 +5,7 @@ import SkillsSection from '../Components/SkillsSection';
 import ServicesSection from '../Components/ServicesSection';
 import design from '../img/design.svg';
 import intelligence from '../img/intelligence.svg';
-import gamedev from '../img/game-dev.svg';
+import dev from '../img/brain.png';
 
 
 function AboutPage() {
@@ -25,9 +25,9 @@ function AboutPage() {
             </div>
             <Tittle tittle={'Services'} span={'Services'} />
             <div className="services-container">
-                <ServicesSection image={design} title={ 'Web Design '} text={'LoremShe put his pistol down, picked up her fletcher,and very carefully put a toxin dart through the center.'} />
-                <ServicesSection image={gamedev} title={ 'Web Development '} text={'LoremShe put his pistol down, picked up her fletcher,and very carefully put a toxin dart through the center.'} />
-                <ServicesSection image={intelligence} title={ 'Artificial Intelligence'} text={'LoremShe put his pistol down, picked up her fletcher,and very carefully put a toxin dart through the center.'} />
+                <ServicesSection image={design} title={ 'Web Design '} text={'I make a professional web design services at affordable rates to help your business attract more visitors and keep them on your site! '} />
+                <ServicesSection image={dev} title={ 'Web Development '} text={'I build a website or app from the scratch, developing various functionality, bug fixing, updating, upgrading, migration or solving any other issues, etc.'} />
+                {/* <ServicesSection image={intelligence} title={ 'Artificial Intelligence'} text={'LoremShe put his pistol down, picked up her fletcher,and very carefully put a toxin dart through the center.'} /> */}
             </div>
             
         </div>
